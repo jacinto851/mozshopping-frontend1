@@ -1,13 +1,46 @@
-
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Moz Shopping Online</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f8f9fa; padding: 20px; }
+    h1 { color: #333; }
+    .product { border: 1px solid #ccc; background: #fff; border-radius: 10px; padding: 15px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .product h2 { margin: 0 0 10px; }
+    .product p { margin: 0 0 10px; color: #555; }
+    form { margin: 0; }
+    .whatsapp-btn {
+      display: inline-block;
+      background: #25D366;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
+
+<h1>Moz Shopping Online</h1>
+<p>Pagamentos via PayPal | Conversa rápida via WhatsApp</p>
+
+<div class="product">
+  <h2>Free Fire</h2>
+  <p>Preço: $2 (≈140 MT)</p>
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+    <input type="hidden" name="cmd" value="_xclick">
+    <input type="hidden" name="business" value="jacintodasilvadarkmoz@gmail.com">
+    <input type="hidden" name="item_name" value="Free Fire Diamantes">
+    <input type="hidden" name="amount" value="2.00">
+    <input type="hidden" name="currency_code" value="USD">
+    <input type="submit" value="Pagar com PayPal">
+  </form>
+</div>
+
+<a class="whatsapp-btn" href="https://wa.me/258851659835" target="_blank">Falar no WhatsApp</a>
+
 </body>
 </html>
